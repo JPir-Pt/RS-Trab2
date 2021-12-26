@@ -6,8 +6,13 @@
 	
 ***************************************************************/
 
+
 /*--------------------------------------------------------------
 	Function: CaesarEncrypt()
+	Parameters:
+		offst -> number of times to rotate clockwise
+		source -> string to encrypt
+		result -> string to decrypt
 	Description: Encryption function that uses Caesar cypher.
 		This kind of cypher rotates the alphabet a designated
 		number of letters.
@@ -30,11 +35,36 @@ void CaesarEncrypt(int offst, std::string source, std::string &result){
 			result[i] = ((source[i]-'a' + offst ) % 26 ) + 'a';
 		else result[i] = source[i];
 	}
-	offst +=0; //testes
+}
+
+/*--------------------------------------------------------------
+	Function: CaesarDecrypt()
+	Parameters:
+		offst -> number of times to rotate counterclockwise
+		source -> string to decrypt
+		result -> decrypted string
+	Description: Decryption function that uses Caesar cypher.
+		It only works with letters.
+		The remaining symbols are unaffected
+----------------------------------------------------------------*/
+void CaesarDecrypt(int offst, std::string source, std::string &result){
+	// offset must be in range 0..25
+	offst %= 26;
+	// be shure result has space for the string
+	result.resize( source.length() );
+	
+	// convert only letters
+	for(int i=0; i<source.length(); i++){
+		if( source[i]>='A' && source[i]<='Z' )
+			result[i] = ((source[i]-'A' - offst ) % 26 ) + 'A';
+		else if( source[i]>='a' && source[i]<='z')
+			result[i] = ((source[i]-'a' - offst ) % 26 ) + 'a';
+		else result[i] = source[i];
+	}
 }
 
 int main(int argc, char** argv) {
-	std::string plain, cypher;
+	std::string plain, cypher, decrypted;
 	int key;
 	
 	std::cout << "Enter plain text: ";
@@ -46,6 +76,13 @@ int main(int argc, char** argv) {
 	CaesarEncrypt( key, plain, cypher );
 	
 	std::cout << "Chypher text: " << cypher;
+	
+	std::cout << "\n----------------- decrypting --------------\n";
+	std::cout << "Enter key: ";
+	std::cin >> key;
+
+	CaesarDecrypt( key, cypher, decrypted );
+	std::cout << "Decrypted: " << decrypted;
 	
 	return 0;
 }
