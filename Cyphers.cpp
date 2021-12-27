@@ -24,16 +24,15 @@
 void CaesarEncrypt(int offst, std::string source, std::string &result){
 	// offset must be in range 0..25
 	offst %= 26;
-	// be shure result has space for the string
-	result.resize( source.length() );
+	result ="";
 	
 	// convert only letters
 	for(int i=0; i<source.length(); i++){
 		if( source[i]>='A' && source[i]<='Z' )
-			result[i] = ((source[i]-'A' + offst ) % 26 ) + 'A';
+			result += ((source[i]-'A' + offst ) % 26 ) + 'A';
 		else if( source[i]>='a' && source[i]<='z')
-			result[i] = ((source[i]-'a' + offst ) % 26 ) + 'a';
-		else result[i] = source[i];
+			result += ((source[i]-'a' + offst ) % 26 ) + 'a';
+		else result += source[i];
 	}
 }
 
@@ -50,23 +49,27 @@ void CaesarEncrypt(int offst, std::string source, std::string &result){
 void CaesarDecrypt(int offst, std::string source, std::string &result){
 	// offset must be in range 0..25
 	offst %= 26;
-	// be shure result has space for the string
-	result.resize( source.length() );
+
+	// modular arithmetic
+	// must add 26 to be always positive
+	offst = 26 - offst;
+	
+	result = "";
 	
 	// convert only letters
 	for(int i=0; i<source.length(); i++){
 		if( source[i]>='A' && source[i]<='Z' )
-			result[i] = ((source[i]-'A' - offst ) % 26 ) + 'A';
+			result += ((source[i]-'A' + offst ) % 26 ) + 'A';
 		else if( source[i]>='a' && source[i]<='z')
-			result[i] = ((source[i]-'a' - offst ) % 26 ) + 'a';
-		else result[i] = source[i];
+			result += ((source[i]-'a' + offst ) % 26 ) + 'a';
+		else result += source[i];
 	}
 }
 
 int main(int argc, char** argv) {
 	std::string plain, cypher, decrypted;
 	int key;
-	
+
 	std::cout << "Enter plain text: ";
 	std::getline( std::cin, plain );
 	
