@@ -1,5 +1,5 @@
 
-# \*\* Trabalho executado, passo a passo **
+# <span style="color:red">\*\*</span> Trabalho executado, passo a passo <span style="color:red">**</span>
 
 ## Desenvolvimento da função para **encriptar**
 
@@ -34,3 +34,19 @@ principal, onde está a função para **encriptar**
 ![Produto final](Imagens/Log_after_updt_README.JPG)
 3. sequência em modo resumo
 ![Produto final - resumo](Imagens/logResumo.JPG)
+
+# <span style="color:red">\*\*</span> Mudar o nome a um repositório remoto <span style="color:red">\*\*</span>
+
+>Esta sequência de ações muda automaticamente todos os links que associam o repositório local ao remoto
+
+1. em github.com
+    * escolher o repositório
+    * abrir os *settings*
+    * mudar o nome
+    * clicar no botão *Rename*
+2. se também quiser **mudar o nome da pasta do repositório local**
+    * mudar o nome da pasta normalmente
+    * abrir o cliente Github para Windows
+        * surge a mensagem a informar que não foi encontrada a pasta local relativa ao repositório remoto
+        * escolher a pasta com o novo nome
+
