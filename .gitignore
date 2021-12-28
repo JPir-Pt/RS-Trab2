@@ -34,3 +34,6 @@
 # IDE devC++ specific files
 *.win
 *.layout
+
+# Windows temporary files
+Thumbs.db
