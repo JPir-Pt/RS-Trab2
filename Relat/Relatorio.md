@@ -31,6 +31,6 @@ principal, onde está a função para **encriptar**
 1. fusão dos dois ramos
 ![fusão dos ramos](Imagens/Merge_decrypt.JPG)
 2. sequência de commits
-![Produto final](Imagens/Log_after_updt_README.jpg)
+![Produto final](Imagens/Log_after_updt_README.JPG)
 3. sequência em modo resumo
 ![Produto final - resumo](Imagens/logResumo.JPG)
