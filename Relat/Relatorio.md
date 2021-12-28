@@ -35,6 +35,9 @@ principal, onde está a função para **encriptar**
 3. sequência em modo resumo
 ![Produto final - resumo](Imagens/logResumo.JPG)
 
+4. sequência em modo resumo com tags
+![Produto final - resumo com tags](Imagens/logResumoTag.JPG)
+
 # <span style="color:red">\*\*</span> Mudar o nome a um repositório remoto <span style="color:red">\*\*</span>
 
 >Esta sequência de ações muda automaticamente todos os links que associam o repositório local ao remoto
