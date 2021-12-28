@@ -1,6 +1,7 @@
 # RS-Trab2
 
-2nd homework to Research Software
+2nd homework to Research Software  
+Uses git LFS
 
 ## Ancient encryption systems
 
