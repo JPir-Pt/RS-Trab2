@@ -39,7 +39,7 @@ principal, onde está a função para **encriptar**
 ![Produto final - resumo com tags](Imagens/logResumoTag.JPG)
 
 5. resumo com instalação do LFS
-![Produto final - resumo com LFS](Imagens/logResumolfs.JPG)
+![Produto final - resumo com LFS](Imagens/logResumoLFS.JPG)
 
 # <span style="color:red">\*\*</span> Mudar o nome a um repositório remoto <span style="color:red">\*\*</span>
 
