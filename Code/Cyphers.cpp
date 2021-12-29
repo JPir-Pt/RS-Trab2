@@ -1,5 +1,13 @@
+/* This Source Code File is subject to the terms of the
+ * GPL-3.0 Licence. If you want to distribute this code,
+ * a copy of the licence must be included
+ *
+ * Author: Jorge Leiria Pires
+ *
+ */
+
 #include <iostream>
-//using namespace std;
+
 /**************************************************************
 	This functions are mented to help students to understand
 	the basics of cryptography.
@@ -66,6 +74,7 @@ void CaesarDecrypt(int offst, std::string source, std::string &result){
 	}
 }
 
+// Test application
 int main(int argc, char** argv) {
 	std::string plain, cypher, decrypted;
 	int key;
