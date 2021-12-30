@@ -1,10 +1,11 @@
-/* This Source Code File is subject to the terms of the
+/*********************************************************
+ * This Source Code File is subject to the terms of the
  * GPL-3.0 Licence. If you want to distribute this code,
  * a copy of the licence must be included
  *
  * Author: Jorge Leiria Pires
  *
- */
+ *********************************************************/
 
 #include <iostream>
 
@@ -15,7 +16,8 @@
 ***************************************************************/
 
 
-/*--------------------------------------------------------------
+/**
+--------------------------------------------------------------
 	Function: CaesarEncrypt()
 	Parameters:
 		offst -> number of times to rotate clockwise
@@ -44,7 +46,8 @@ void CaesarEncrypt(int offst, std::string source, std::string &result){
 	}
 }
 
-/*--------------------------------------------------------------
+/**
+--------------------------------------------------------------
 	Function: CaesarDecrypt()
 	Parameters:
 		offst -> number of times to rotate counterclockwise
@@ -74,7 +77,9 @@ void CaesarDecrypt(int offst, std::string source, std::string &result){
 	}
 }
 
-// Test application
+///
+/// Test application
+///
 int main(int argc, char** argv) {
 	std::string plain, cypher, decrypted;
 	int key;

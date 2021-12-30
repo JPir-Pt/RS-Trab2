@@ -1,30 +1,29 @@
 
-# <span style="color:red">\*\*</span> Trabalho executado, passo a passo <span style="color:red">**</span>
+# \*\* Trabalho executado, passo a passo \*\*
 
-## Desenvolvimento da função para **encriptar**
+## Desenvolvimento da função para encriptar
 
-## Criação de um ramo para **desencriptar**
+## Criação de um ramo para desencriptar
 
->desenvolvimento em paralelo com o ramo
-principal, onde está a função para **encriptar**
+> desenvolvimento em paralelo com o ramo principal, onde está a função para **encriptar**
 
 ### teste do desencriptar
 
->Foi encontrado um ***erro***
+> Foi encontrado um ***erro***
 
 ### correção do erro
 
 ## Entretanto, no ramo principal
 
->foram acrescentados ao **.gitignore**, 2 ficheiros específicos do **DevC++**
+> foram acrescentados ao **gitignore**, 2 ficheiros específicos do **DevC++**
 
 ## Fusão dos 2 ramos
 
->O programa ficou completo com as funções para **encriptar** e **desencriptar**
+> O programa ficou completo com as funções para **encriptar** e **desencriptar**
 
 ## Actualização do README
 
->Completar a descrição do projecto
+> Completar a descrição do projecto
 
 # Imagens
 
@@ -33,7 +32,7 @@ principal, onde está a função para **encriptar**
 2. sequência de commits
 ![Produto final](Imagens/Log_after_updt_README.JPG)
 3. sequência em modo resumo
-![Produto final - resumo](Imagens/logResumo.JPG)
+![Produto final - resumo](logResumo.JPG)
 
 4. sequência em modo resumo com tags
 ![Produto final - resumo com tags](Imagens/logResumoTag.JPG)
@@ -41,9 +40,9 @@ principal, onde está a função para **encriptar**
 5. resumo com instalação do LFS
 ![Produto final - resumo com LFS](Imagens/logResumoLFS.JPG)
 
-# <span style="color:red">\*\*</span> Mudar o nome a um repositório remoto <span style="color:red">\*\*</span>
+# \*\* Mudar o nome a um repositório remoto \*\*
 
->Esta sequência de ações muda automaticamente todos os links que associam o repositório local ao remoto
+> Esta sequência de ações muda automaticamente todos os links que associam o repositório local ao remoto
 
 1. em github.com
     * escolher o repositório
@@ -55,4 +54,3 @@ principal, onde está a função para **encriptar**
     * abrir o cliente Github para Windows
         * surge a mensagem a informar que não foi encontrada a pasta local relativa ao repositório remoto
         * escolher a pasta com o novo nome
-
