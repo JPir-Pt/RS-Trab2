@@ -1,36 +1,35 @@
-/*********************************************************
+/*
  * This Source Code File is subject to the terms of the
  * GPL-3.0 Licence. If you want to distribute this code,
  * a copy of the licence must be included
  *
  * Author: Jorge Leiria Pires
  *
- *********************************************************/
-
+ ************************************************************
+ *
+ *	These functions are mented to help students to understand
+ *	the basics of cryptography.
+ *	
+ ************************************************************/
 #include <iostream>
-
-/**************************************************************
-	This functions are mented to help students to understand
-	the basics of cryptography.
-	
-***************************************************************/
 
 
 /**
---------------------------------------------------------------
-	Function: CaesarEncrypt()
-	Parameters:
-		offst -> number of times to rotate clockwise
-		source -> string to encrypt
-		result -> string to decrypt
-	Description: Encryption function that uses Caesar cypher.
-		This kind of cypher rotates the alphabet a designated
-		number of letters.
-		If the displacemente is 3, 'A' becomes 'D',
-		'B' becomes 'E' and so on.
-		It only works with letters.
-		The remaining symbols are unaffected
-----------------------------------------------------------------*/
+*	Encryption function that uses Caesar cypher.
+*		This kind of cypher rotates the alphabet a designated
+*		number of letters.
+*		If the displacemente is 3, 'A' becomes 'D',
+*		'B' becomes 'E' and so on.
+*		It only works with letters.
+*		The remaining symbols are unaffected.
+*--------------------------------------------------------------
+*	@param[in]	offst  -> number of times to rotate clockwise
+*	@param[in]	source -> string to encrypt
+*	@param[out]	result -> string to decrypt
+*
+*	@see CaesarDecrypt()
+* 
+*----------------------------------------------------------------*/
 void CaesarEncrypt(int offst, std::string source, std::string &result){
 	// offset must be in range 0..25
 	offst %= 26;
@@ -46,17 +45,20 @@ void CaesarEncrypt(int offst, std::string source, std::string &result){
 	}
 }
 
+
 /**
---------------------------------------------------------------
-	Function: CaesarDecrypt()
-	Parameters:
-		offst -> number of times to rotate counterclockwise
-		source -> string to decrypt
-		result -> decrypted string
-	Description: Decryption function that uses Caesar cypher.
-		It only works with letters.
-		The remaining symbols are unaffected
-----------------------------------------------------------------*/
+*	Decryption function that uses Caesar cypher.
+*		It only works with letters.
+*		The remaining symbols are unaffected.
+*
+*--------------------------------------------------------------
+*	@param[in]	offst  -> number of times to rotate counterclockwise
+*	@param[in]	source -> string to decrypt
+*	@param[out]	result -> decrypted string
+*
+*	@see CaesarEncrypt()
+* 
+*----------------------------------------------------------------*/
 void CaesarDecrypt(int offst, std::string source, std::string &result){
 	// offset must be in range 0..25
 	offst %= 26;
@@ -77,8 +79,10 @@ void CaesarDecrypt(int offst, std::string source, std::string &result){
 	}
 }
 
+
 ///
 /// Test application
+///--
 ///
 int main(int argc, char** argv) {
 	std::string plain, cypher, decrypted;
