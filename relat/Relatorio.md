@@ -28,17 +28,15 @@
 # Imagens
 
 1. fusão dos dois ramos
-![fusão dos ramos](Imagens/Merge_decrypt.JPG)
+![fusão dos ramos](images/Merge_decrypt.JPG)
 2. sequência de commits
-![Produto final](Imagens/Log_after_updt_README.JPG)
+![Produto final](images/Log_after_updt_README.JPG)
 3. sequência em modo resumo
-![Produto final - resumo](Imagens/logResumo.JPG)
-
+![Produto final - resumo](images/logResumo.JPG)
 4. sequência em modo resumo com tags
-![Produto final - resumo com tags](Imagens/logResumoTag.JPG)
-
+![Produto final - resumo com tags](images/logResumoTag.JPG)
 5. resumo com instalação do LFS
-![Produto final - resumo com LFS](Imagens/logResumoLFS.JPG)
+![Produto final - resumo com LFS](images/logResumoLFS.JPG)
 
 # \*\* Mudar o nome a um repositório remoto \*\*
 
