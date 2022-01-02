@@ -52,3 +52,35 @@
     * abrir o cliente Github para Windows
         * surge a mensagem a informar que não foi encontrada a pasta local relativa ao repositório remoto
         * escolher a pasta com o novo nome
+
+# \*\* Criar a documentação \*\*
+
+> Foi usado o **Doxygen** para documentar o projecto.
+>> Mudaram-se os comentários no código para respeitarem os requisitos do Doxygen.  
+>> **Problema:** As imagens não apareciam na documentação.  
+>> **Solução:** Até ao dia 31.12.2021, não foi possível encontrar uma solução.  
+>> Em 31.12.2021 saiu uma correção do **Doxygen** para esse problema.  
+>> Com o novo **Doxigen** foi necessário criar uma pasta com a duplicação das imagens.  
+>>  **NOTA:** A interface gráfica do novo **Doxygen** não funciona, o que ainda tornou o
+>> processo mais difícil.  
+> 
+> Estudou-se o **GitHub Pages** para publicação da documentação.
+>  
+> Foi criado um novo repositório para se poder publicar.
+>  
+> Instalou-se o **gitLFS**.  
+>> **Problema:** As imagens aparecem no repositório local, mas não no remoto (Pages).  
+>> **Solução:** Após várias tentativas, concluiu-se que não se pode usar o gitLFS.  
+>>  
+>> **Problema:** O código comentado aparece no repositório local, mas não no remoto (Pages).  
+>> **Solução:** Foi bastante mais complicado de resolver. Ao navegar no site,
+>> aparecia o erro \"**404: File not Found**\" sempre que se tentava aceder ao código comentado.
+>> O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao
+>> explorar o processo, verificou-se que há um **Bot** que é executado sempre que se faz push no
+>> repositório. Esse **Bot** chama uma aplicação (**Jekill**) para criar as páginas **html**.  
+>> O **Doxygen** coloca o caracter \"**_**\" do início do nome de alguns ficheiros.  
+>> Por seu lado, o **Jekill** remove-o.  
+>> Desta forma, os nomes estavam correctos no repositório, mas incorrectos no site.  
+>> A solução é impedir o **Bot** de executar o **Jekill**, publicando o site sem qualquer
+>> processamento adicional.  
+>> Para isso basta adicionar um ficheiro vazio \".**noJekill**\" na raiz do repositório.
