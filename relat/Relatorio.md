@@ -83,4 +83,4 @@
 >> Desta forma, os nomes estavam correctos no repositório, mas incorrectos no site.  
 >> A solução é impedir o **Bot** de executar o **Jekill**, publicando o site sem qualquer
 >> processamento adicional.  
->> Para isso basta adicionar um ficheiro vazio .**noJekill** na raiz do repositório.
+>> Para isso basta adicionar um ficheiro vazio ".nojekill" na raiz do repositório.
