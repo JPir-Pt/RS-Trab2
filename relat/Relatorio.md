@@ -74,13 +74,13 @@
 >>  
 >> **Problema:** O código comentado aparece no repositório local, mas não no remoto (Pages).  
 >> **Solução:** Foi bastante mais complicado de resolver. Ao navegar no site,
->> aparecia o erro \"**404: File not Found**\" sempre que se tentava aceder ao código comentado.
+>> aparecia o erro **404: File not Found** sempre que se tentava aceder ao código comentado.
 >> O mais estranho era que o ficheiro efectivamente estava no local certo do repositório. Ao
 >> explorar o processo, verificou-se que há um **Bot** que é executado sempre que se faz push no
 >> repositório. Esse **Bot** chama uma aplicação (**Jekill**) para criar as páginas **html**.  
->> O **Doxygen** coloca o caracter \"**_**\" do início do nome de alguns ficheiros.  
+>> O **Doxygen** coloca o caracter "_" do início do nome de alguns ficheiros.  
 >> Por seu lado, o **Jekill** remove-o.  
 >> Desta forma, os nomes estavam correctos no repositório, mas incorrectos no site.  
 >> A solução é impedir o **Bot** de executar o **Jekill**, publicando o site sem qualquer
 >> processamento adicional.  
->> Para isso basta adicionar um ficheiro vazio \".**noJekill**\" na raiz do repositório.
+>> Para isso basta adicionar um ficheiro vazio .**noJekill** na raiz do repositório.
