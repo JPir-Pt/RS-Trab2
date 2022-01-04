@@ -87,4 +87,5 @@
 
 # \*\* Testes \*\*
 
-> Utilização da função **assert()** para validar se o número da chave é positivo
+> Utilização da função **assert()** para validar se o número da chave é positivo.  
+> Criação de um executável `CyphersDBG.exe` específico para testes.

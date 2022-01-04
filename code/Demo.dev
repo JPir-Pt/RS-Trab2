@@ -1,6 +1,6 @@
 [Project]
-FileName=Cyphers.dev
-Name=Cyphers
+FileName=Demo.dev
+Name=Demo
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=Cyphers.cpp
+FileName=Demo.cpp
 CompileCpp=1
 Folder=
 Compile=1

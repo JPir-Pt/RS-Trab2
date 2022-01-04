@@ -12,10 +12,12 @@ With the provided executable, `CaesarEncrypt()` and `CaesarDecrypt()` functions 
 | UP/Down | Encrypt/decript upper and lower case letters| letter correctly encrypted or decrypted | [x] |
 | Non alpha | Encrypt/decrypt non alphabetic characters | character does not change | [x] |
 
-> Just for debugging purposes the `assert()` function was also used in the code.  
+> For debugging purposes the `assert()` function was also used in the code.  
 > For this function to work, please comment the line  
 > `#define NDEBUG`  
 > and recompile and link the code, to produce a new `.exe` file.  
-> You can also use `CyphersDBG.exe` included on the **Latest Release**.  
 > Then, try to use negative numbers in the `key` to **encript** ou **decrypt** the text.  
-> You should get an **assert error**.
+> You should get an **assert error**.  
+>
+> You can also use `CyphersDBG.exe` included on the **Latest Release**.  
+>

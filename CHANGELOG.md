@@ -1,6 +1,15 @@
 
 # Version history
 
+## Version 1.1.2
+
+> * Released **2021.01.04**
+> * Added:
+>   * Demo.cpp file to project
+>   * CyphersDBG.cpp file to tests
+> * Changed:
+>   * Display in function main()
+
 ## Version 1.1.1
 
 > * Released **2021.01.04**
