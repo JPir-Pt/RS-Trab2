@@ -11,8 +11,12 @@
  *	the basics of cryptography.
  *	
  ************************************************************/
-#include <iostream>
 
+// Comment next line for debugging purposes
+#define NDEBUG
+//
+#include <iostream>
+#include <cassert>
 
 /**
 *	Encryption function that uses Caesar cypher.
@@ -31,7 +35,8 @@
 * 
 *----------------------------------------------------------------*/
 void CaesarEncrypt(int offst, std::string source, std::string &result){
-	// offset must be in range 0..25
+	assert(offst>=0);
+ 	// offset must be in range 0..25
 	offst %= 26;
 	result ="";
 	
@@ -60,6 +65,7 @@ void CaesarEncrypt(int offst, std::string source, std::string &result){
 * 
 *----------------------------------------------------------------*/
 void CaesarDecrypt(int offst, std::string source, std::string &result){
+	assert(offst>=0);
 	// offset must be in range 0..25
 	offst %= 26;
 
@@ -87,11 +93,12 @@ void CaesarDecrypt(int offst, std::string source, std::string &result){
 int main(int argc, char** argv) {
 	std::string plain, cypher, decrypted;
 	int key;
-
+	
+	std::cout << "\n----------------- encrypting --------------\n";
 	std::cout << "Enter plain text: ";
 	std::getline( std::cin, plain );
 	
-	std::cout << "Enter key (displacment): ";
+	std::cout << "Enter key (displacement): ";
 	std::cin >> key;
 	
 	CaesarEncrypt( key, plain, cypher );
