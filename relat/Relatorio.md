@@ -61,9 +61,9 @@
 >> **Solução:** Até ao dia 31.12.2021, não foi possível encontrar uma solução.  
 >> Em 31.12.2021 saiu uma correção do **Doxygen** para esse problema.  
 >> Com o novo **Doxigen** foi necessário criar uma pasta com a duplicação das imagens.  
->>  **NOTA:** A interface gráfica do novo **Doxygen** não funciona, o que ainda tornou o
+>> **NOTA:** A interface gráfica do novo **Doxygen** não funciona, o que ainda tornou o
 >> processo mais difícil.  
-> 
+>
 > Estudou-se o **GitHub Pages** para publicação da documentação.
 >  
 > Foi criado um novo repositório para se poder publicar.
@@ -84,3 +84,7 @@
 >> A solução é impedir o `bot` de executar o **Jekill**, publicando o site sem qualquer
 >> processamento adicional.  
 >> Para isso basta adicionar um ficheiro vazio `.nojekill` na raiz do repositório.
+
+# \*\* Testes \*\*
+
+> Utilização da função **assert()** para validar se o número da chave é positivo

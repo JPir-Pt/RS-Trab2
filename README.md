@@ -15,19 +15,20 @@
 > creator **Julius Caesar**. This type of encryption was used by the Roman emperor to send
 > confidential messages to his generals.  
 >
-> The goal of this project is to help us undertand how **Caesar cypher** works and let us 
-> encrypt and decript text messages using a key.
+> The goal of this project is to help us undertand how **Caesar cypher** works and let us
+> encrypt and decrypt text messages using a key (number between 0 and 25).
 
 ## How to use the software
 
-> The executable is far simple to use: just asks for a string of text and a key to encrypt it.
+> The executable is far simple to use: just asks for a string of text and a number key to
+> encrypt it.
 > Then it produces the encripted text and asks for a new key to decrypt it.  
 > If we enter the wrong key to decrypt, the resulting message is still encrypted.
 
 ## Functions in the code
 
-> CaesarEncryption()  
-> CaesarDecryption()
+> CaesarEncrypt() to encrypt a string of text  
+> CaesarDecrypt() to decrypt a string of text
 
 ## Documentation
 

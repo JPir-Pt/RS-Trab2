@@ -16,7 +16,7 @@ Doxygen Doxyfile
 
 1. Install [Doxygen](https://www.doxygen.nl/download.html).
 2. Run `Doxywizard`
-3. From the `File`menu choose `Open`and select the `Doxyfile`
+3. From the `File` menu choose `Open` and select the `Doxyfile`
 4. Follow the wizard's instructions
 
 ## Improving the package
@@ -28,7 +28,7 @@ git clone https://github.com/JPir-Pt/RS-Trab2.git
 cd RS-Trab2
 ```
 
-To produce the `.exe` file, just compile and link the `Cyphers.cpp`file  
+To produce the `.exe` file, just compile and link the `Cyphers.cpp` file  
 **or**  
 delete the `main()` function from the code and include `Cyphers.cpp` on your project file.  
 
